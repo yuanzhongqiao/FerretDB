@@ -9,7 +9,7 @@
 [![Packages](https://github.com/FerretDB/FerretDB/actions/workflows/packages.yml/badge.svg?branch=main)](https://github.com/FerretDB/FerretDB/actions/workflows/packages.yml)
 [![Docs](https://github.com/FerretDB/FerretDB/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/FerretDB/FerretDB/actions/workflows/docs.yml)
 
-# FerretDB 的成立是为了成为 MongoDB 事实上的开源替代品。 FerretDB 是一个开源代理，使用 PostgreSQL 或 SQLite 作为数据库引擎，将 MongoDB 5.0+ 有线协议查询转换为 SQL。
+FerretDB 的成立是为了成为 MongoDB 事实上的开源替代品。 FerretDB 是一个开源代理，使用 PostgreSQL 或 SQLite 作为数据库引擎，将 MongoDB 5.0+ 有线协议查询转换为 SQL。
 
 
 
