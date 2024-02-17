@@ -9,78 +9,7 @@
 [![Packages](https://github.com/FerretDB/FerretDB/actions/workflows/packages.yml/badge.svg?branch=main)](https://github.com/FerretDB/FerretDB/actions/workflows/packages.yml)
 [![Docs](https://github.com/FerretDB/FerretDB/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/FerretDB/FerretDB/actions/workflows/docs.yml)
 
-<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FerretDB 的成立是为了成为 MongoDB 事实上的开源替代品。 FerretDB 是一个开源代理，使用 PostgreSQL 或 SQLite 作为数据库引擎，将 MongoDB 5.0+ 有线协议查询转换为 SQL。</font></font></p>
-<section class="js-render-needs-enrichment render-needs-enrichment position-relative" data-identity="304f277b-708c-4bfa-a19d-8527a73ee434" data-host="https://viewscreen.githubusercontent.com" data-src="https://viewscreen.githubusercontent.com/markdown/mermaid?docs_host=https%3A%2F%2Fdocs.github.com" data-type="mermaid" aria-label="美人鱼渲染的输出容器">
-  <div class="js-render-enrichment-target" data-json="{&quot;data&quot;:&quot;flowchart LR\n  A[\&quot;Any application\\nAny MongoDB driver\&quot;]\n  F{{FerretDB}}\n  P[(PostgreSQL)]\n  S[(\&quot;SQLite\&quot;)]\n\n  A -- \&quot;MongoDB protocol\\nBSON\&quot; --&amp;gt; F\n  F -- \&quot;PostgreSQL protocol\\nSQL\&quot; --&amp;gt; P\n  F -. \&quot;SQLite library\\nSQL\&quot; .-&amp;gt; S\n&quot;}" data-plain="flowchart LR
-  A[&quot;Any application\nAny MongoDB driver&quot;]
-  F{{FerretDB}}
-  P[(PostgreSQL)]
-  S[(&quot;SQLite&quot;)]
 
-  A -- &quot;MongoDB protocol\nBSON&quot; --> F
-  F -- &quot;PostgreSQL protocol\nSQL&quot; --> P
-  F -. &quot;SQLite library\nSQL&quot; .-> S
-" dir="auto"><!----><!----><div class="position-absolute top-0 pr-2 width-full d-flex flex-justify-end flex-items-center">
-    
-    <details class="details-reset details-overlay details-overlay-dark" style="display: contents">
-      <summary role="button" aria-label="打开对话框" class="btn my-2 mr-2 p-0 d-inline-flex" aria-haspopup="dialog">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="octicon m-2">
-          <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path>
-        </svg>
-      </summary>
-      <details-dialog class="Box Box--overlay render-full-screen d-flex flex-column anim-fade-in fast" aria-label="mermaid rendered container" role="dialog" aria-modal="true">
-        <div>
-          <button aria-label="Close dialog" data-close-dialog="" type="button" data-view-component="true" class="Link--muted btn-link position-absolute render-full-screen-close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:text-bottom" class="octicon octicon-x">
-              <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
-            </svg>
-          </button>
-          <div class="Box-body border-0" role="presentation"></div>
-        </div>
-      </details-dialog>
-    </details>
-  <!----><clipboard-copy class="btn my-2 js-clipboard-copy p-0 d-inline-flex tooltipped-no-delay" role="button" data-copy-feedback="Copied!" data-tooltip-direction="s" aria-label="复制美人鱼代码" value="flowchart LR
-  A[&quot;Any application\nAny MongoDB driver&quot;]
-  F{{FerretDB}}
-  P[(PostgreSQL)]
-  S[(&quot;SQLite&quot;)]
-
-  A -- &quot;MongoDB protocol\nBSON&quot; --> F
-  F -- &quot;PostgreSQL protocol\nSQL&quot; --> P
-  F -. &quot;SQLite library\nSQL&quot; .-> S
-" tabindex="0">
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-copy js-clipboard-copy-icon m-2">
-      <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-      <path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-    </svg>
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
-      <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-    </svg>
-  </clipboard-copy>
-  </div><!---->
-    <div class="render-container color-bg-transparent js-render-target p-0 is-render-automatic is-render-requested is-render-ready" data-identity="304f277b-708c-4bfa-a19d-8527a73ee434" data-host="https://viewscreen.githubusercontent.com" data-type="mermaid" style="height: 180px;">
-      <iframe role="presentation" class="render-viewer" sandbox="allow-scripts allow-same-origin allow-top-navigation allow-popups" src="https://viewscreen.githubusercontent.com/markdown/mermaid?docs_host=https%3A%2F%2Fdocs.github.com&amp;color_mode=light#304f277b-708c-4bfa-a19d-8527a73ee434" name="304f277b-708c-4bfa-a19d-8527a73ee434" data-content="{&quot;data&quot;:&quot;flowchart LR\n  A[\&quot;Any application\\nAny MongoDB driver\&quot;]\n  F{{FerretDB}}\n  P[(PostgreSQL)]\n  S[(\&quot;SQLite\&quot;)]\n\n  A -- \&quot;MongoDB protocol\\nBSON\&quot; --&amp;gt; F\n  F -- \&quot;PostgreSQL protocol\\nSQL\&quot; --&amp;gt; P\n  F -. \&quot;SQLite library\\nSQL\&quot; .-&amp;gt; S\n&quot;}">
-      </iframe>
-    </div>
-  <!----><!----></div>
-  <span class="js-render-enrichment-loader d-flex flex-justify-center flex-items-center width-full" style="min-height:100px" role="presentation" hidden="">
-    <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="16" height="16" viewBox="0 0 16 16" fill="none" data-view-component="true" class="octospinner mx-auto anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" fill="none"></circle>
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
-</svg>
-  </span>
-<div class="js-render-enrichment-fallback"><div class="render-plaintext-hidden" dir="auto">
-      <pre lang="mermaid" aria-label="Raw mermaid code">flowchart LR<font></font>
-  A["Any application\nAny MongoDB driver"]<font></font>
-  F{{FerretDB}}<font></font>
-  P[(PostgreSQL)]<font></font>
-  S[("SQLite")]<font></font>
-<font></font>
-  A -- "MongoDB protocol\nBSON" --&gt; F<font></font>
-  F -- "PostgreSQL protocol\nSQL" --&gt; P<font></font>
-  F -. "SQLite library\nSQL" .-&gt; S<font></font>
-</pre>
-    </div></div></section>
 
 <h2 tabindex="-1" dir="auto"><a id="user-content-why-do-we-need-ferretdb" class="anchor" aria-hidden="true" tabindex="-1" href="#why-do-we-need-ferretdb"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么我们需要 FerretDB？</font></font></h2>
 <p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MongoDB 最初对于我们许多开发人员来说是一项令人大开眼界的技术，它使我们能够比使用关系数据库更快地构建应用程序。在早期，其易于使用且文档齐全的驱动程序使 MongoDB 成为最简单的数据库解决方案之一。然而，随着时间的推移，MongoDB 放弃了其开源根源；将许可证更改为</font></font><a href="https://www.mongodb.com/licensing/server-side-public-license" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SSPL</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 使其无法用于许多开源和早期商业项目。</font></font></p>
